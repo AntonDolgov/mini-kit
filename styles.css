@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Lato;
     position: relative;
@@ -54,4 +58,13 @@ body {
 
 .smooth-underline:hover {
     background-size: 100% 2px;
+}
+
+svg {
+    padding: 0;
+    overflow: visible;
+}
+
+svg + svg {
+    margin-left: 48px;
 }

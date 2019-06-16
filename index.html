@@ -18,7 +18,30 @@
                 <a href="javascript:;" class="link smooth-underline">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur doloremque beatae veniam impedit aliquam, autem aliquid! At enim id culpa, explicabo voluptates laborum quia doloribus in voluptate tenetur, maiores praesentium nihil deserunt eum! Odit optio incidunt hic ut maiores odio quo id vitae facere temporibus. Rerum optio in odit, cum recusandae quae voluptas ab laborum alias. Adipisci, recusandae? Magni aliquam, vitae ipsum quibusdam qui consectetur repellendus hic sequi, rem cum odio quidem voluptate aliquid corrupti omnis dolorum! Nesciunt ad tenetur eius corrupti odit illum aut nisi pariatur dolorum, veniam vero sit deserunt sint ex debitis, explicabo voluptatum, recusandae facilis aperiam!</a>
 
-                <br><br>
+                <br><br><br>
+
+                <p class="title">curved text along the path</p>
+
+                <br>
+                <svg id="s" height="200" width="200" viewBox="-70,-70,140,140">
+                        <defs><path id="p" d="M-70,0 A70,70,0 1 1 70,0 A70,70,0 1 1 -70,0Z"></path><circle id="r" r="70"></circle></defs>
+                        <text id="t"><textPath id="tp" xlink:href="#p">Wish we could turn back time..</textPath></text>
+                      </svg>
+
+
+                      <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                          <path id="myPath" fill="none" stroke="red"
+                            d="M 10,30
+                               A 20,20 0,0,1 50,30
+                               A 20,20 0,0,1 90,30
+                               Q 90,60 50,90
+                               Q 10,60 10,30 z" />
+                            <text>
+                            <textPath style="font-size: 8px;" xlink:href="#myPath">
+                              ..to the good all days. When the mama sang us to sleep, but now we're stressed out!
+                            </textPath>
+                          </text>
+                        </svg>
             </section>
         </div>
     </div>
