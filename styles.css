@@ -68,3 +68,50 @@ svg {
 svg + svg {
     margin-left: 48px;
 }
+
+.custom-scrollbar-example {
+font-size: 15px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.custom-scrollbar-example__block {
+    max-width: 292px;
+    height: 400px;
+    padding: 16px;
+    margin-right: 48px;
+    background: skyblue;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #8080809c;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: rgba(0,0,0,0);
+    transition: color .5s ease-out;
+    transition: color .3s ease;
+}
+.custom-scrollbar-example__block--type-2 {
+background: #eb87a5;
+    transition: color .5s ease-out;
+}
+
+.custom-scrollbar-example__block:not(.custom-scrollbar-example__block--type-2):hover {
+    color: rgba(255,255,255,1);
+    transition: color .3s ease;
+}
+
+.custom-scrollbar-example__block::-webkit-scrollbar,
+.custom-scrollbar-example__block::-webkit-scrollbar-thumb {
+    width: 8px;
+    border-radius: 4px;
+    background-clip: padding-box;
+}
+
+.custom-scrollbar-example__block::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px;
+}
+
+.custom-scrollbar-example__block--type-2.is-scrolling {
+    color: rgba(255,255,255,1);
+    transition: color .3s ease;
+}
